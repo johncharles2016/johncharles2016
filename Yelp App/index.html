@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    
+  <meta charset="utf-8">
+
+  <title>John's Yelp App</title>
+  <meta name="description" content="John's Yelp App Final Project">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+    
+<body>
+    
+    <div class = "container">
+        <div class = "loginpage" id="logindiv">
+            <h4>Welcome to John's app!</h4>
+            <input type="email" placeholder="Please enter an email address" id="email"/>
+            <br>
+            <input type="password" placeholder="Please enter the corresponding password" id="password"/>
+            <br>
+            <button class = "button1" onclick="login()">Log In</button>
+
+        </div>
+
+
+        <div class = "Mainpage" id="userdiv">
+            <div class="topnav">
+                <a href="#" onclick="logout();return false;">Log out</a>
+                <a href="#home" onclick="Mainpage_search();return false;">Search</a>
+            </div>
+
+
+            <div class = "Mainpage-content">
+                
+                <div id = "home " style="color:white;">
+                    <h3>Easy Search!</h3>
+                    <br>
+                    <p>Find Local Businesses quick and easy.</p>
+					<br>
+                    <p>To use GPS, leave location, or "close to" field blank</p>
+                </div>
+                <div id="JohnModal" class="modal">
+                    <div class = "modal-content">
+                        <span class="hide" onclick="hideModal()">&times;</span>
+                        <div id="map" class="map-image"></div>
+                    </div>
+                </div>
+				<div id = "search-tab">
+                    <h3>Search</h3>
+                    <input class = "searchbar" type = "text" placeholder = "Look for" id = "searchvalue"/>
+                    <input class = "searchbar" type = "text" placeholder = "Close to" id = "locationvalue"/>
+                    <button id = "find" class="button2"><img src="search.png" height="30" width="30" onclick="locationSearch()"></button>
+                           
+					<br><br>
+                    <div id = "results"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb1LdfInlHw5pZLtUjNU2jc1o29ku3LY8&callback=initMap" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+      // My web application's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAMe8OBZbZnF56rbKq-QTGZpltkUGDeytM",
+        authDomain: "cop-4655-final-project.firebaseapp.com",
+        projectId: "cop-4655-final-project",
+        storageBucket: "cop-4655-final-project.appspot.com",
+        messagingSenderId: "485969395385",
+        appId: "1:485969395385:web:6e446603d168b1deaf6568",
+        measurementId: "G-1RXE1LTH0Y"
+      };
+      //Firebase initialization
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+        
+</body>
+    
+</html>
