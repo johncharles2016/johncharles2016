@@ -58,12 +58,12 @@ function DepartmentManagementScreen({ navigation }) {
                         </View>
                     </Modal>
                 </Portal>
-                <Title><Text style={[styles.countText2]}> Workers </Text></Title>
+                <Title>Workers</Title>
                 <DataTable>
                     <DataTable.Header>
-                        <DataTable.Title><Text style={[styles.countText2]}> Worker Name </Text></DataTable.Title>
-                        <DataTable.Title><Text style={[styles.countText2]}> Add/Remove Workers From Department </Text> </DataTable.Title>
-                        <DataTable.Title><Text style={[styles.countText2]}> Delete Department </Text></DataTable.Title>
+                        <DataTable.Title>Worker Name</DataTable.Title>
+                        <DataTable.Title>Add/Remove Workers From Department</DataTable.Title>
+                        <DataTable.Title>Delete Department</DataTable.Title>
                     </DataTable.Header>
                     <ManaDep showModal={showModal} />
 
@@ -164,7 +164,7 @@ function RegisterScreen({navigation}) {
             <TextInput label="Phone Number" style={styles.input} value={phone} onChangeText={text => setPhone(text)} autoCompleteType={"tel"} keyboardType={"numeric"}/>
             <HelperText style={{color: 'red'}} visible={showError}>{errorText}</HelperText>
             <Button mode="contained" color = "lightgray" onPress={() => handleRegistration(fullName, email, password, passwordConfirm, phone, setErrorText, setShowError, navigation)}>
-                <Text style={[styles.countText2]}> Register </Text> 
+                Register
             </Button>
         </View>
     );
@@ -275,13 +275,13 @@ function OrganizationScreen({ navigation }) {
 
             </DataTable>
             <Button mode = "contained" color = "lightgray"  style ={styles.button3} onPress={() => {console.log("Pressed");navigation.navigate('Clockin')}}>
-                <Text style={[styles.countText2]}> Clockin Page </Text>
+                Clockin Page
             </Button>
             <Button mode = "contained" color = "lightgray" style ={styles.button3} onPress={() => {console.log('Pressed');navigation.navigate('Management')}}>
-                <Text style={[styles.countText2]}> Data Management </Text> 
+                Data Management
             </Button>
             <Button mode = "contained" color = "lightgray" style ={styles.button3} onPress={() => {console.log('Pressed');navigation.navigate('OrgMana')}}>
-                <Text style={[styles.countText2]}> Manage Organizations </Text> 
+                Manage Organizations
             </Button>
         </View>
     );
@@ -367,7 +367,7 @@ function DepartmentStatusScreen({route, navigation }) {
                         />
                     </DataTable>
                     <Button mode = "contained" color = "lightgray" style ={styles.button3} onPress={() => {console.log('Pressed');navigation.navigate('Organization')}}>
-                        <Text style={[styles.countText2]}> Search New Organization </Text> 
+                        Search New Organization
                     </Button>
                 </View>
     );
@@ -458,23 +458,23 @@ function LoginScreen({navigation}) {
             <TextInput label="Password" value={pass} style={styles.input} onChangeText={text => setPass(text)}/>
             <HelperText style={{color: 'red'}} visible={showError}>{errorText}</HelperText>
             <Button mode="contained" color = "lightgray" onPress={() => handleLogin(setShowError, setErrorText, user, pass, navigation)}>
-                <Text style={[styles.countText2]}> Login </Text>
+                <Text>Login</Text>
             </Button>
             <Caption>Don't have an account?</Caption>
             <Button mode="contained" color = "lightgray" style={styles.button3}containerStyle={styles.loginButtons} onPress={() => {
                 console.log('Pressed');
                 navigation.navigate('Register')
             }}>
-               <Text style={[styles.countText2]}> Register </Text> 
+               Register
             </Button>
             <Button
                 style= {styles.button3}
-                icon="send" 
+                //icon="send" 
 				 color = "lightgray"
                 mode="contained"
                 onPress={() => {test();}}
             >
-                <Text style={[styles.countText2]}> test </Text>
+                test
             </Button>
 
         </View>
@@ -564,7 +564,7 @@ function HomeScreen({ navigation }) {
                 mode="contained"
                 onPress={() => {console.log('Pressed');navigation.navigate('Organization')}}
             >
-                <Text style={[styles.countText]}> Guest Login </Text>
+                Guest Login
             </Button>
             <Button
                 style= {styles.button3}
@@ -573,7 +573,7 @@ function HomeScreen({ navigation }) {
                 mode="contained"
                 onPress={() => {console.log('Pressed');navigation.navigate('Login')}}
             >
-                <Text style={[styles.countText]}> Login </Text>
+                Login
             </Button>
             <Button
                 style= {styles.button3}
@@ -582,7 +582,7 @@ function HomeScreen({ navigation }) {
                 mode="contained"
                 onPress={() => {console.log('Pressed');navigation.navigate('Register')}}
             >
-                <Text style={[styles.countText]}> Register </Text> 
+                Register
             </Button>
         </View>
     );
@@ -618,10 +618,10 @@ function OrgManaScreen({  navigation: { goBack } }) {
                             <TextInput label = "Full Name" value = {orgName} style={styles.input} onChangeText={text => setOrgNameNew(text)}/>
                             <HelperText style={{color: 'red'}} visible={showError}>{errorText}</HelperText>
                             <Button mode = "contained" color = "lightgray" onPress={() => {console.log('Pressed'),orgCreate(orgName,setErrorText,setShowError), setOrgNameNew('')}}>
-                                <Text style={[styles.countText2]}> Confirm </Text> 
+                                Confirm
                             </Button>
                             <Button mode = "contained" color = "lightgray" onPress={() => {console.log('Pressed'), hideModal(), console.log(test)}}>
-                                <Text style={[styles.countText2]}> Cancel </Text> 
+                                Cancel
                             </Button>
                         </View>
                     </Modal>
@@ -631,10 +631,10 @@ function OrgManaScreen({  navigation: { goBack } }) {
                             <TextInput label = "Department Name" value = {depName} style={styles.input} onChangeText={text => setDepNameNew(text)}/>
                             <HelperText style={{color: 'red'}} visible={showError}>{errorText}</HelperText>
                             <Button mode = "contained" color = "lightgray" onPress={() => {console.log('Pressed'), setOrgNameNew(''),depCreate(depName,setErrorText,setShowError,OrgId)}}>
-                                <Text style={[styles.countText2]}> Add </Text> 
+                                Add
                             </Button>
                             <Button mode = "contained" color = "lightgray" onPress={() => {console.log('Pressed'), hideModal3(), console.log(test)}}>
-                                <Text style={[styles.countText2]}> Cancel </Text> 
+                                Cancel
                             </Button>
                         </View>
 
@@ -643,12 +643,12 @@ function OrgManaScreen({  navigation: { goBack } }) {
                 <Appbar.Header style = {styles.backarrow}>
                     <Appbar.BackAction onPress={() => {goBack()}} />
                 </Appbar.Header>
-                <Title><Text style={[styles.countText2]}> Organization Management</Text></Title>
+                <Title>Organization Management</Title>
                 <DataTable>
                     <DataTable.Header>
-                        <DataTable.Title>  <Text style={[styles.countText2]}> Organization </Text> </DataTable.Title>
-                        <DataTable.Title><Text style={[styles.countText2]}> Delete Organization  </Text></DataTable.Title>
-                        <DataTable.Title><Text style={[styles.countText2]}> Add Department  </Text></DataTable.Title>
+                        <DataTable.Title>Organization</DataTable.Title>
+                        <DataTable.Title>Delete Organization</DataTable.Title>
+                        <DataTable.Title>Add Department</DataTable.Title>
                     </DataTable.Header>
                     <ManaOrg onToggleSnackBar = {onToggleSnackBar} showModal3 = {showModal3}/>
                 </DataTable>
@@ -663,7 +663,7 @@ function OrgManaScreen({  navigation: { goBack } }) {
                     Organization Deleted
                 </Snackbar>
                 <Button mode = "contained" color = "lightgray" style ={styles.button3} onPress={() => {console.log('Pressed'); showModal();setShowError(false);}}>
-                    <Text style={[styles.countText2]}> Add Organization </Text> 
+                    Add Organization
                 </Button>
             </View>
         </Provider>
@@ -757,20 +757,11 @@ export default App;
 
 const styles = StyleSheet.create ({
     button3: {
-        height:"10%",
-        marginBottom: "1%",
-        marginTop: "1%",
-		alignItems: "center",
-		justifyContent: "center",
-		padding: "1%"
-    },
-	countText: {
-    color: 'gold',
-    fontSize: "500%"
-    },
-	countText2: {
-    color: 'gold',
-    fontSize: "200%"
+        height:"5%",
+        marginBottom: 10,
+        marginTop: 10,
+		fontSize: "105%",
+		color: 'white'
     },
     button2:{
         height:30,
@@ -797,7 +788,9 @@ const styles = StyleSheet.create ({
         fontSize: "250%"
     },
     backarrow:{
-		alignItems: 'center'
+        position:'absolute',
+        left: 0,
+        right:0,
     },
 })
 
