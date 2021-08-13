@@ -1,5 +1,5 @@
 - Hello, Welcome to John's Github
-- I am a Computer Science graduate currently interested in a part-time entry level programming position. 
+- I am a Computer Science graduate currently interested in an entry level programming position. 
 - I have experience with html/css, php, javascript, MYSQL, react, R, and python. 
 - Included in this repository are some of my past projects. 
 - [Internet Computing](https://lamp.cse.fau.edu/~johncharles2016/) (A collection of 7 different projects)
