@@ -3,7 +3,7 @@
 - I have experience with Html/Css, Php, Python, Javascript, MYSQL, React, C++, Java, and WordPress. 
 - Included in this repository are some of my past projects. 
 - [Classguru](https://classguru.org) (Team website where I was responsible for creating the front end)
-- [Customer Service Notication](https://www.youtube.com/watch?v=vdqwqtHYdNs) (Senior project created using react native with two team members for over a year)
+- [Customer Service Notication](https://youtu.be/vdqwqtHYdNs) (Senior project created using react native with two team members for over a year)
 - [Androidstudio Mobile apps](https://youtu.be/98NxDlQHGuQ) (Gps applications using yahoo and Postman api) 
 
 <!---
