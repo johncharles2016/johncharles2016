@@ -5,7 +5,6 @@
 - [Classguru](https://classguru.org) (Team website where I was responsible for creating the front end)
 - [Customer Service Notication](https://www.youtube.com/watch?v=vdqwqtHYdNs) (Senior project created using react native with two team members for over a year)
 - [Androidstudio Mobile apps](https://youtu.be/98NxDlQHGuQ) (Gps applications using yahoo and Postman api) 
-- [Internet Computing](https://lamp.cse.fau.edu/~johncharles2016/) (A collection of 7 different projects)
 
 <!---
 johncharles2016/johncharles2016 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
