@@ -4,7 +4,7 @@
 - Included in this repository are some of my past projects. 
 - [Classguru](https://classguru.org) (Team website where I was responsible for creating the front end)
 - [Customer Service Notication](https://youtu.be/vdqwqtHYdNs) (Senior project created using react native with two team members for over a year)
-- [Androidstudio Mobile apps](https://youtu.be/98NxDlQHGuQ) (Gps applications using yahoo and Postman api) 
+- [Androidstudio Mobile apps](https://youtu.be/98NxDlQHGuQ) (Gps applications using Yahoo and Postman api) 
 
 <!---
 johncharles2016/johncharles2016 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
